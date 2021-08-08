@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 name: Node Project `my-app` CI on ECR
 
@@ -38,4 +38,3 @@ jobs:
         echo "Pushing image to ECR..."
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-        
