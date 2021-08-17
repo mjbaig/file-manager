@@ -4,9 +4,12 @@ import (
 	"log"
 
 	"github.com/gin-gonic/gin"
+	"github.com/mjbaig/file-manager/datastore"
 )
 
 func main() {
+
+	datastore.UploadFile("./properties.yml", "hiimmaz-file-manager", "properties.yml")
 
 	log.Println("Hello, World!")
 
