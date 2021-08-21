@@ -10,7 +10,8 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-secrets.yml
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+environment_config.bat

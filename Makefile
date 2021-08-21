@@ -11,6 +11,9 @@ docker_run:
 build:
 	@go build -v .
 
+run:
+	@./file-manager.exe
+
 tool:
 	go vet ./...; true
 	gofmt -w .
@@ -27,3 +30,7 @@ help:
 	@echo "make tool: run specified go tool"
 	@echo "make lint: golint ./..."
 	@echo "make clean: remove object files and cached files"
+	@echo "make build: compiles project"
+	@echo "make run: runs project"
+	@echo "make docker_build: builds docker image"
+	@echo "make docker_run: runs docker image"
